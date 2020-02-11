@@ -1,0 +1,32 @@
+.content__title-view {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.form {
+  &__title {
+    display: block;
+    width: 95vw;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    font-size: 28px;
+  }
+  &__text {
+    display: block;
+    width: 95vw;
+    height: 50vh;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    font-size: 20pt;
+  }
+  &__btn:hover {
+    transform: translateY(0.1em);
+  }
+}

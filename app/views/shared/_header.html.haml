@@ -1,0 +1,13 @@
+.header
+  .header__title
+    = link_to 'Verbalize', root_path, class: 'header__title--btn'
+  .header__box
+    - if user_signed_in?
+      = link_to new_post_path, class: "header__box__icon" do
+        = icon('fa', 'edit', class: 'header__box__icon--new')
+      -# = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'header__box__icon'
+      = link_to destroy_user_session_path, method: :delete, class: 'header__box__icon--out' do
+        = icon('fas', 'sign-out-alt', class: 'header__box__icon--out')
+    - else
+      = link_to '新規登録', new_user_registration_path, class: "header__box__create-user"
+      = link_to 'ログイン', new_user_session_path, class: "header__box__come-back"

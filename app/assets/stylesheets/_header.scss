@@ -1,0 +1,46 @@
+.header {
+  height: 130px;
+  width: 100vw;
+  // background-color: #000077;
+  // opacity: 0.9;
+  background-color: #1d4293;
+  display: flex;
+  justify-content: space-around;
+  &__title {
+    line-height: 130px;
+    font-size: 85px;
+    font-weight: bolder;
+    &--btn {
+      text-decoration: none;
+      // color: #ffff44;
+      color: whitesmoke;
+    }
+  }
+  &__box {
+    line-height: 130px;
+    &__icon {
+      font-size: 1.7rem;
+      text-decoration: none;
+      &--out {
+        font-size: 1.7rem;
+        // color: #ffff77;
+        color: whitesmoke;
+      }
+      &--out:hover {
+        transform: translateY(0.1em);
+      }
+      &--new {
+        size: 100px;
+        // color: #ffff77;
+        color: whitesmoke;
+      }
+      &--new:hover {
+        // box-shadow: 0 0 5px;
+        border-bottom-color: transparent;
+        // transform: translateY(0.1875em);
+        transform: translateY(0.1em);
+      }
+    }
+  }
+}
+

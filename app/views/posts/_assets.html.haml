@@ -1,0 +1,12 @@
+.posts
+  .head-title
+    My Assets
+  - current_user.posts.order("updated_at DESC").each do |post|
+    .post
+      = link_to post_path(post.id), class: "post--title" do
+        .post__title
+          = post.title
+
+
+-# 積み上げリスト繰り返し
+-# root_path(post)

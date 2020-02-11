@@ -1,0 +1,21 @@
+.heading
+  = render 'shared/header'
+
+.detail
+  - if user_signed_in? && current_user.id == @post.user_id
+    .post--title
+      = @post.title
+    .post--manage
+      = link_to "編集", edit_post_path(@post.id), class: "post--manage__edit"
+      = link_to "削除", post_path(@post.id), method: :delete, class: "post--manage__delete"
+    .post--content
+      = simple_format @post.content
+  - else
+    .post--title
+      = @post.title
+    .post--author
+      投稿者:
+      = @post.user.nickname
+    .post--content
+      = simple_format @post.content
+      

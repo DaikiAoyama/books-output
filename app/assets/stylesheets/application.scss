@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+
+* {
+box-sizing: border-box;
+}
+
+@import "reset";
+@import "posts";
+// @import "assets";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.wrapper {
+  display: flex;
+}

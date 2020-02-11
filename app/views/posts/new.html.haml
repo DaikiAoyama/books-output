@@ -1,0 +1,7 @@
+.heading
+  = render 'shared/header'
+.form-new
+  = form_with model: @post, class: :form, local: true do |form|
+    = form.text_field :title, placeholder: :本の題名, class: :form__title
+    = form.text_area :content, placeholder: :要約, class: :form__text
+    = form.submit '投稿', class: :form__btn
